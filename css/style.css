@@ -1,0 +1,77 @@
+:root {
+    --bgColor: #f3f4f4;
+    --primaryColor: #f63b56;
+    --borderColor: #677788;
+    --textPrimaryColor: #9ba5b1;
+    --textPlaceholderColor: #d6dadf;
+}
+
+::placeholder {
+    color: var(--textPlaceholderColor);
+    /* color: red; */
+}
+
+a {
+    color: var(--primaryColor);
+}
+
+.formulir-pendaftaran label {
+    font-size: 12px;
+}
+
+.list-pendaftar label {
+    font-size: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+
+.container div {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+input[type="radio"], input[type="checkbox"] {
+    accent-color: var(--primaryColor);
+}
+
+.submit-form {
+    background-color: var(--primaryColor);
+}
+
+.formulir-pendaftaran, .list-pendaftar {
+    background-color: white;
+    width: 730px;
+    height: fit-content;
+    box-shadow: 5px 5px 20px 0 grey;
+}
+
+
+.form-label, .form-check-label {
+    color: var(--textPrimaryColor);
+}
+
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+  bottom: .5em;
+}
